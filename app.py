@@ -82,9 +82,9 @@ chat_history = st.session_state['chat_history'][selected_space]
 st.markdown("### Analysis History")
 for entry in chat_history:
     if entry["role"] == "user":
-        st.markdown(f"**User Input:** {entry['content']}")
+        st.markdown(f"*User Input:* {entry['content']}")
     elif entry["role"] == "assistant":
-        st.markdown(f"**Analysis:** {entry['content']}")
+        st.markdown(f"*Analysis:* {entry['content']}")
     st.markdown("---")
 
 # User input for text analysis
