@@ -62,9 +62,9 @@ if st.sidebar.button("Create Space"):
 
 # Model options
 model_options = {
-    "Banking Intent (BERT-Banking77)": "philschmid/BERT-Banking77",
-    "Finance Sentiment Analysis": "RashidNLP/Finance-Sentiment-Classification",
-    "Banking Statement Classifier": "lxyuan/banking-intent-distilbert-classifier"
+    "BERT ": "philschmid/BERT-Banking77",
+    "FinBERT": "RashidNLP/Finance-Sentiment-Classification",
+    "DistilBERT": "lxyuan/banking-intent-distilbert-classifier"
 }
 selected_model_name = st.sidebar.radio("Select Model", list(model_options.keys()))
 
